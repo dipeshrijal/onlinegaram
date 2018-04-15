@@ -1,0 +1,110 @@
+.yaslider{width:980px;position:relative;z-index:1;overflow:hidden;}
+.yaslider-box{height:357px;width:980px;overflow:hidden;}
+.ys-clear:after{content:".";display:block;height:1%;clear:both;visibility:hidden;}
+.ys-larr,
+.ys-rarr{display:block;position:absolute;top:50%;left:-5px;height:41px;width:36px;z-index:999;}
+.ys-rarr{left:auto;right:-5px;}
+.ys-badge{position:absolute;top:-4px;left:-4px;width:49px;height:49px;z-index:1010;}
+.ys-badge-top{background:url(../image/yaslider/badge-top.png) center center no-repeat}
+.ys-badge-new{background:url(../image/yaslider/badge-new.png) center center no-repeat}
+.ys-badge-best{background:url(../image/yaslider/badge-best.png) center center no-repeat}
+.ys-badge-hot{background:url(../image/yaslider/badge-hot.png) center center no-repeat}
+.ys-slide{height:357px;width:980px;}
+.ys-p-image{float:right;top:0%;left:50%;}
+.ys-p-rating{position:absolute;top:25%;left:5%;margin-top:80px;}
+.ys-p-name{top:10%;left:5%;margin:25px 0 0;}
+.ys-p-name a{}
+.ys-p-name a:hover{text-decoration:underline}
+.ys-p-name span{display:block;padding:0 20px 0 0;margin-top:20px}
+.ys-p-price{position:absolute;top:45%;left:15%;margin:-72px 0 0;width:150px;text-align:center;height:150px;line-height:60px;font-size:24px;border-radius:50% 50% 50% 50%;background:#3692CA;}
+.ys-p-price:hover{cursor:pointer;-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg);-ms-transform:rotate(360deg);-webkit-transition:all 1s ease-in-out 0s;-ms-transition:all 1s ease-in-out 0s;-moz-transition:all 1s ease-in-out 0s;-o-transition:all 1s ease-in-out 0s;z-index:999;}
+.ys-p-price-old{display:block;position:absolute;top:102px;width:150px;text-align:center;font-size:24px;text-decoration:line-through;line-height:11px;text-shadow:none;}
+.ys-p-price-new{display:block;position:absolute;top:71px;width:150px;text-align:center;font-size:24px;line-height:11px;text-shadow:none;font-weight:bold;}
+.ys-p-buy,
+.ys-p-details{position:absolute;top:80%;left:5%;margin:-72px 0 0 184px;height:28px;line-height:28px;width:100px;text-align:center;text-transform:uppercase;font-weight:bold;}
+.ys-p-details{margin-top:-40px;}
+.ys-p-buy a,
+.ys-p-details a{text-decoration:none;display:block;height:28px;line-height:28px;width:100px;}
+.ys-p-buy a:hover,
+.ys-p-details a:hover{text-decoration:none}
+.ys-style-default{}
+.ys-style-bubble{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;margin-top:10px;}
+.ys-style-default .ys-p-price,
+.ys-style-bubble .ys-p-price{background-position:0 0;background-repeat:no-repeat;color:#FFF;}
+.ys-style-default .ys-p-name a,
+.ys-style-bubble .ys-p-name a{color:#666}
+.ys-style-default .ys-p-name span,
+.ys-style-bubble .ys-p-name span{color:#999}
+.ys-style-default .ys-p-buy a,
+.ys-style-bubble .ys-p-buy a,
+.ys-style-default .ys-p-details a,
+.ys-style-bubble .ys-p-details a{color:#666;background-position:-80px -72px;background-repeat:no-repeat;}
+.ys-style-default .ys-p-buy a:hover,
+.ys-style-bubble .ys-p-buy a:hover,
+.ys-style-default .ys-p-details a:hover,
+.ys-style-bubble .ys-p-details a:hover{color:#fff;background-position:-80px -100px;}
+.ys-style-default .ys-larr,
+.ys-style-bubble .ys-larr{background-position:10px;background-repeat:no-repeat;}
+.ys-style-default .ys-rarr,
+.ys-style-bubble .ys-rarr{background-position:-27px;background-repeat:no-repeat;}
+.ys-style-default .ys-p-price-old,
+.ys-style-bubble .ys-p-price-old{}
+.ys-style-default.ys-color-grey .ys-p-price,
+.ys-style-default.ys-color-grey .ys-larr,
+.ys-style-default.ys-color-grey .ys-rarr,
+.ys-style-default.ys-color-grey .ys-p-buy a,
+.ys-style-default.ys-color-grey .ys-p-details a{background-image:url(../image/yaslider/default-grey.png);}
+.ys-style-default.ys-color-blue .ys-larr,
+.ys-style-default.ys-color-blue .ys-rarr{background-image:url(../image/bg_direction_nav.png);}
+.ys-style-default.ys-color-blue .ys-p-buy a,
+.ys-style-default.ys-color-blue .ys-p-details a{background-image:url(../image/yaslider/default-blue.png);}
+.ys-style-default.ys-color-red .ys-p-price,
+.ys-style-default.ys-color-red .ys-larr,
+.ys-style-default.ys-color-red .ys-rarr,
+.ys-style-default.ys-color-red .ys-p-buy a,
+.ys-style-default.ys-color-red .ys-p-details a{background-image:url(../image/yaslider/default-red.png);}
+.ys-style-default.ys-color-green .ys-p-price,
+.ys-style-default.ys-color-green .ys-larr,
+.ys-style-default.ys-color-green .ys-rarr,
+.ys-style-default.ys-color-green .ys-p-buy a,
+.ys-style-default.ys-color-green .ys-p-details a{background-image:url(../image/yaslider/default-green.png);}
+.ys-style-default.ys-color-orange .ys-p-price,
+.ys-style-default.ys-color-orange .ys-larr,
+.ys-style-default.ys-color-orange .ys-rarr,
+.ys-style-default.ys-color-orange .ys-p-buy a,
+.ys-style-default.ys-color-orange .ys-p-details a{background-image:url(../image/yaslider/default-orange.png);}
+.ys-style-default.ys-color-black .ys-p-price,
+.ys-style-default.ys-color-black .ys-larr,
+.ys-style-default.ys-color-black .ys-rarr,
+.ys-style-default.ys-color-black .ys-p-buy a,
+.ys-style-default.ys-color-black .ys-p-details a{background-image:url(../image/yaslider/default-black.png);}
+.ys-style-bubble.ys-color-grey .ys-p-price,
+.ys-style-bubble.ys-color-grey .ys-larr,
+.ys-style-bubble.ys-color-grey .ys-rarr,
+.ys-style-bubble.ys-color-grey .ys-p-buy a,
+.ys-style-bubble.ys-color-grey .ys-p-details a{background-image:url(../image/yaslider/bubble-grey.png);}
+.ys-style-bubble.ys-color-blue .ys-p-price,
+.ys-style-bubble.ys-color-blue .ys-larr,
+.ys-style-bubble.ys-color-blue .ys-rarr,
+.ys-style-bubble.ys-color-blue .ys-p-buy a,
+.ys-style-bubble.ys-color-blue .ys-p-details a{background-image:url(../image/yaslider/bubble-blue.png);}
+.ys-style-bubble.ys-color-red .ys-p-price,
+.ys-style-bubble.ys-color-red .ys-larr,
+.ys-style-bubble.ys-color-red .ys-rarr,
+.ys-style-bubble.ys-color-red .ys-p-buy a,
+.ys-style-bubble.ys-color-red .ys-p-details a{background-image:url(../image/yaslider/bubble-red.png);}
+.ys-style-bubble.ys-color-green .ys-p-price,
+.ys-style-bubble.ys-color-green .ys-larr,
+.ys-style-bubble.ys-color-green .ys-rarr,
+.ys-style-bubble.ys-color-green .ys-p-buy a,
+.ys-style-bubble.ys-color-green .ys-p-details a{background-image:url(../image/yaslider/bubble-green.png);}
+.ys-style-bubble.ys-color-orange .ys-p-price,
+.ys-style-bubble.ys-color-orange .ys-larr,
+.ys-style-bubble.ys-color-orange .ys-rarr,
+.ys-style-bubble.ys-color-orange .ys-p-buy a,
+.ys-style-bubble.ys-color-orange .ys-p-details a{background-image:url(../image/yaslider/bubble-orange.png);}
+.ys-style-bubble.ys-color-black .ys-p-price,
+.ys-style-bubble.ys-color-black .ys-larr,
+.ys-style-bubble.ys-color-black .ys-rarr,
+.ys-style-bubble.ys-color-black .ys-p-buy a,
+.ys-style-bubble.ys-color-black .ys-p-details a{background-image:url(../image/yaslider/bubble-black.png);}

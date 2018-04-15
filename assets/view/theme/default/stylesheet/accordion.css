@@ -1,0 +1,62 @@
+
+.accordion {
+    width: 100%;
+} 
+.accordion > li > a {
+    display: block;
+    position: relative;		
+    color: #646464;
+    
+}
+.accordion > li > a:after {
+    content: "\f105";
+    font-family:'FontAwesome';
+    position: absolute;
+    right: 5px;
+}
+.accordion > li > ul > li > a:after {
+    content: "\f101";
+    font-family:'FontAwesome';
+    position: absolute;
+    left: 1px;
+   
+}
+.accordion > li > a:hover, 
+.accordion > li > a.active {
+    background-color: #4b5668;
+    color: #fff;
+    -webkit-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out;
+}
+.accordion > li > a.active:after {
+    content: "\f106";
+    font-family:'FontAwesome';
+    position: absolute;
+    right: 5px;
+}
+.accordion ul li a {                   
+    margin: 0 auto;                    
+    line-height: 39px;
+    text-indent: 24px;
+    display: block;
+    position: relative;                    
+}
+.accordion > li > ul li a.current:before{
+    content: "\f00c";
+    font-family: 'FontAwesome';                    
+    position: absolute;                   
+    left: -20px;
+}               
+.accordion > li > ul li a.current {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.accordion > li > ul li:hover a{
+    -webkit-transition: color 0.4s ease-in-out;
+    -moz-transition: color 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
+    background-color: #6b7b94;;
+    color: white;
+}
